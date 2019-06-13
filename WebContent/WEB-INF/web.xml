@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Calcolatrice</display-name>
+
+	<servlet>
+		<servlet-name>somma</servlet-name>
+		<servlet-class>it.objectmethod.calcolatrice.servlet.AddizioneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>somma</servlet-name>
+		<url-pattern>/somma</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sottrazione</servlet-name>
+		<servlet-class>it.objectmethod.calcolatrice.servlet.SottrazioneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sottrazione</servlet-name>
+		<url-pattern>/sott</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>moltiplicazione</servlet-name>
+		<servlet-class>it.objectmethod.calcolatrice.servlet.MoltiplicazioneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>moltiplicazione</servlet-name>
+		<url-pattern>/molt</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>divisione</servlet-name>
+		<servlet-class>it.objectmethod.calcolatrice.servlet.DivisioneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>divisione</servlet-name>
+		<url-pattern>/div</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
