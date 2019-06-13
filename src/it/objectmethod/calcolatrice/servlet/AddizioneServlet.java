@@ -25,7 +25,7 @@ public class AddizioneServlet extends HttpServlet {
 		double two = Double.parseDouble(request.getParameter("second_number"));
 		
 		double somma = one + two;
-		
+		//ciao
 		
 		
 		request.setAttribute("risultato", somma);
